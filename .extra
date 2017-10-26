@@ -1,2 +1,3 @@
+# Configure git
 
-alias tf="cd ~/projects/tflow"
+git config --global core.excludesfile ~/.gitignore_global
