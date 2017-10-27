@@ -1,0 +1,8 @@
+# Tab autocomplete ignores case
+set completion-ignore-case on
+
+# Show completion possibilities
+set show-all-if-ambiguous on
+
+# Flip through autocompletion matches with Shift-Tab.
+"\e[Z": menu-complete
