@@ -5,18 +5,25 @@ function mkd() {
     mkdir -p "$@" && cd "$_";
 }
 
+
 # Count lines in a file.
 function lcount() {
     wc -l "$@"
 }
 
+
 # Create a new file consisting of the first n lines of a file
 
+
+# Use python for basic math at the command line: expressions with parens must be quoted""
+function pycalc() {
+    python -c "from math import *; print($*)"
+}
 
 
 # Extract many types of compressed packages
 # Credit: http://nparikh.org/notes/zshrc.txt
-extract() {
+function extract() {
   if [ -f "$1" ]; then
     case "$1" in
       *.tar.bz2)  tar -jxvf "$1"                        ;;
