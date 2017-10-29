@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+alias subl="DISPLAY=:0 /opt/sublime_text/sublime_text"
+#alias matlab="/Applications/MATLAB_R2015b.app/Contents/MacOS/MATLAB_maci64"
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
+# Lock the screen (when going AFK)
+# TODO FIX THIS.  Doesn't lock...logs out fully.
+#alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# Make cp verbose by default
+alias cp="cp -v"
+
+# List all files colorized in long format
+alias l="ls -lF ${colorflag}"
+
+# List all files colorized in long format, including dot files
+alias la="ls -laF ${colorflag}"
+
+# List only directories
+alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
