@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 alias subl="/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text"
-alias matlab="/Applications/MATLAB_R2015b.app/Contents/MacOS/MATLAB_maci64"
+alias matlab="/Applications/MATLAB_R2017b.app/Contents/MacOS/MATLAB_maci64"
+alias vsc="/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
 
 alias ..="cd .."
 alias ...="cd ../.."
